@@ -27,6 +27,7 @@ class DeliveryPointSchema extends Schema
                 ->setRelationName('address')
                 ->setRelationManager(AddressManager::class)
                 ->setRequired(true),
+            Attributes\TextAttribute::make('address_code'),
             Attributes\CreatedAtAttribute::make(),
             Attributes\UpdatedAtAttribute::make(),
             Attributes\DeletedAtAttribute::make(),

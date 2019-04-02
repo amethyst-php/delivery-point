@@ -19,6 +19,7 @@ class DeliveryPointFaker extends Faker
         $bag->set('code', sha1(microtime()));
         $bag->set('vendor', DeliveryPointVendorFaker::make()->parameters()->toArray());
         $bag->set('address', AddressFaker::make()->parameters()->toArray());
+        $bag->set('address_code', sha1(microtime()));
 
         return $bag;
     }

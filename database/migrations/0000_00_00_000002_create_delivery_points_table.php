@@ -19,6 +19,7 @@ class CreateDeliveryPointsTable extends Migration
             $table->foreign('vendor_id')->references('id')->on(Config::get('amethyst.delivery-point.data.delivery-point-vendor.table'));
             $table->integer('address_id')->unsigned();
             $table->foreign('address_id')->references('id')->on(Config::get('amethyst.address.data.address.table'));
+            $table->string('address_code')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
