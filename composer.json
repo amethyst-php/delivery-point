@@ -6,7 +6,8 @@
     "require": {
         "php": ">=7.1",
         "railken/amethyst-common": "0.1.*",
-        "railken/amethyst-address": "0.1.*"
+        "railken/amethyst-address": "0.1.*",
+        "railken/amethyst-opening-hour": "0.1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",
