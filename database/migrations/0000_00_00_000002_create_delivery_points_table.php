@@ -15,6 +15,7 @@ class CreateDeliveryPointsTable extends Migration
         Schema::create(Config::get('amethyst.delivery-point.data.delivery-point.table'), function (Blueprint $table) {
             $table->increments('id');
             $table->string('code')->nullable();
+            $table->string('name')->nullable();
             $table->integer('vendor_id')->unsigned();
             $table->foreign('vendor_id')->references('id')->on(Config::get('amethyst.delivery-point.data.delivery-point-vendor.table'));
             $table->integer('address_id')->unsigned();

@@ -19,6 +19,7 @@ class DeliveryPointSchema extends Schema
         return [
             Attributes\IdAttribute::make(),
             Attributes\TextAttribute::make('code'),
+            Attributes\TextAttribute::make('name'),
             Attributes\BelongsToAttribute::make('vendor_id')
                 ->setRelationName('vendor')
                 ->setRelationManager(DeliveryPointVendorManager::class)
