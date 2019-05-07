@@ -15,7 +15,15 @@ class DeliveryPointServiceProvider extends CommonServiceProvider
 
         $this->app->register(\Railken\Amethyst\Providers\AddressServiceProvider::class);
         $this->app->register(\Railken\Amethyst\Providers\OpeningHourServiceProvider::class);
+    }
 
+    /**
+     * @inherit
+     */
+    public function boot()
+    {
+        parent::boot();
+        
         app('amethyst')->pushMorphRelation('opening-hour', 'target', 'delivery-point');
     }
 }
