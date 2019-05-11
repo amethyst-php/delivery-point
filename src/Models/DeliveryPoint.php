@@ -28,7 +28,7 @@ class DeliveryPoint extends Model implements EntityContract
      */
     public function address(): BelongsTo
     {
-        return $this->belongsTo(Address::class);
+        return $this->belongsTo(config('amethyst.address.data.address.model'));
     }
 
     /**
@@ -36,6 +36,6 @@ class DeliveryPoint extends Model implements EntityContract
      */
     public function vendor(): BelongsTo
     {
-        return $this->belongsTo(DeliveryPointVendor::class);
+        return $this->belongsTo(config('amethyst.delivery-point.data.delivery-point-vendor.model'));
     }
 }
