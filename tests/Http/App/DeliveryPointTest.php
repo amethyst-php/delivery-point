@@ -1,11 +1,11 @@
 <?php
 
-namespace Railken\Amethyst\Tests\Http\App;
+namespace Amethyst\Tests\Http\App;
 
-use Railken\Amethyst\Api\Support\Testing\TestableBaseTrait;
-use Railken\Amethyst\Fakers\DeliveryPointFaker;
-use Railken\Amethyst\Managers\DeliveryPointManager;
-use Railken\Amethyst\Tests\BaseTest;
+use Amethyst\Api\Support\Testing\TestableBaseTrait;
+use Amethyst\Fakers\DeliveryPointFaker;
+use Amethyst\Managers\DeliveryPointManager;
+use Amethyst\Tests\BaseTest;
 
 class DeliveryPointTest extends BaseTest
 {

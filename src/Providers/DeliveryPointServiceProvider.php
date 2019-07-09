@@ -1,8 +1,8 @@
 <?php
 
-namespace Railken\Amethyst\Providers;
+namespace Amethyst\Providers;
 
-use Railken\Amethyst\Common\CommonServiceProvider;
+use Amethyst\Common\CommonServiceProvider;
 
 class DeliveryPointServiceProvider extends CommonServiceProvider
 {
@@ -13,8 +13,8 @@ class DeliveryPointServiceProvider extends CommonServiceProvider
     {
         parent::register();
 
-        $this->app->register(\Railken\Amethyst\Providers\AddressServiceProvider::class);
-        $this->app->register(\Railken\Amethyst\Providers\OpeningHourServiceProvider::class);
+        $this->app->register(\Amethyst\Providers\AddressServiceProvider::class);
+        $this->app->register(\Amethyst\Providers\OpeningHourServiceProvider::class);
     }
 
     /**

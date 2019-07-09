@@ -1,13 +1,13 @@
 {
-    "name": "railken/amethyst-delivery-point",
+    "name": "amethyst/delivery-point",
     "type": "library",
     "keywords": ["laravel", "amethyst", "amethyst-delivery-point", "delivery-point"],
     "license": "MIT",
     "require": {
         "php": ">=7.1",
-        "railken/amethyst-common": "0.1.*",
-        "railken/amethyst-address": "0.1.*",
-        "railken/amethyst-opening-hour": "0.1.*"
+        "amethyst/common": "0.1.*",
+        "amethyst/address": "0.1.*",
+        "amethyst/opening-hour": "0.1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.1",
@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4" : {
-            "Railken\\Amethyst\\" : "src/"
+            "Amethyst\\" : "src/"
         }
     },
     "autoload-dev": {
         "psr-4": { 
-            "Railken\\Amethyst\\Tests\\": "tests/" 
+            "Amethyst\\Tests\\": "tests/" 
         }
     },
     "extra": {
@@ -30,7 +30,7 @@
         },
         "laravel": {
             "providers": [
-                "Railken\\Amethyst\\Providers\\DeliveryPointServiceProvider"
+                "Amethyst\\Providers\\DeliveryPointServiceProvider"
             ]
         }
     }
