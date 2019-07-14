@@ -6,12 +6,12 @@ use Amethyst\Common\ConfigurableManager;
 use Railken\Lem\Manager;
 
 /**
- * @method \Amethyst\Models\DeliveryPointVendor newEntity()
- * @method \Amethyst\Schemas\DeliveryPointVendorSchema getSchema()
+ * @method \Amethyst\Models\DeliveryPointVendor                 newEntity()
+ * @method \Amethyst\Schemas\DeliveryPointVendorSchema          getSchema()
  * @method \Amethyst\Repositories\DeliveryPointVendorRepository getRepository()
- * @method \Amethyst\Serializers\DeliveryPointVendorSerializer getSerializer()
- * @method \Amethyst\Validators\DeliveryPointVendorValidator getValidator()
- * @method \Amethyst\Authorizers\DeliveryPointVendorAuthorizer getAuthorizer()
+ * @method \Amethyst\Serializers\DeliveryPointVendorSerializer  getSerializer()
+ * @method \Amethyst\Validators\DeliveryPointVendorValidator    getValidator()
+ * @method \Amethyst\Authorizers\DeliveryPointVendorAuthorizer  getAuthorizer()
  */
 class DeliveryPointVendorManager extends Manager
 {
