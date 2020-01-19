@@ -2,7 +2,7 @@
 
 namespace Amethyst\Tests\Http\App;
 
-use Amethyst\Api\Support\Testing\TestableBaseTrait;
+use Amethyst\Core\Support\Testing\TestableBaseTrait;
 use Amethyst\Fakers\DeliveryPointVendorFaker;
 use Amethyst\Managers\DeliveryPointVendorManager;
 use Amethyst\Tests\BaseTest;
