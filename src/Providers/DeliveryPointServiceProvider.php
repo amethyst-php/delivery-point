@@ -23,7 +23,5 @@ class DeliveryPointServiceProvider extends CommonServiceProvider
     public function boot()
     {
         parent::boot();
-
-        app('amethyst')->pushMorphRelation('opening-hour', 'target', 'delivery-point');
     }
 }
